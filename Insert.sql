@@ -83,6 +83,9 @@ VALUES
 ('Salvatore','Greco','doc29@email.com','Cloud'),
 ('Vincenzo','Russo','doc30@email.com','Database');
 
+SELECT * FROM Docenti;
+
+
 -- INSERT AULE
 INSERT INTO Aule (NomeAula, Capacita)
 VALUES
@@ -94,6 +97,7 @@ VALUES
 ('Aula 15',40),('Aula 16',30),('Aula 17',25),('Aula 18',20),('Aula 19',35);
 
 
+SELECT * FROM Aule;
 SELECT * FROM Iscrizioni;
 SELECT * FROM Studenti
 SELECT * FROM Corsi
@@ -131,6 +135,8 @@ VALUES
 (26,26),(27,27),(28,28),(29,29),(30,30);
 
 select * from DocentiCorso;
+
+SELECT * FROM Lezioni
 
 -- INSERT LEZIONI
 INSERT INTO Lezioni (CorsoID, AulaID, DataLezione, OraInizio, OraFine)
