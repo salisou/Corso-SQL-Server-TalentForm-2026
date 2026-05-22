@@ -1,0 +1,9 @@
+USE ScuolaDb;
+GO 
+
+
+-- Restituisce la lista delle tabelle 
+SELECT TABLE_NAME 
+FROM INFORMATION_SCHEMA.TABLES
+WHERE TABLE_TYPE = 'BASE TABLE'
+

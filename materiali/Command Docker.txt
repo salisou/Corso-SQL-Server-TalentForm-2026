@@ -1,0 +1,15 @@
+Creazione dell'immagine:
+docker run -e "ACCEPT_EULA=Y" -e 'SA_PASSWORD=Password123!' -p 1433:1433 --name sqlserver-python -d mcr.microsoft.com/mssql/server:2022-latest
+________________________________________________________________________________________________________________________________________________________
+
+Creare il Container SQL Server:
+docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=Password123!' -p 1433:1433 --name sqlserver-python -d mcr.microsoft.com/mssql/server:2022-latest
+
+________________________________________________________________________________________________________________________________________________________
+Connection String:
+Server=localhost,1433;
+Database=master;
+User Id=SA;
+Password=Password123!;
+Encrypt=False;
+TrustServerCertificate=True;
