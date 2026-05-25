@@ -26,7 +26,7 @@ WHERE TABLE_TYPE = 'BASE TABLE'
 -- Esempio — studenti nati dopo il 2000
 SELECT *
 FROM Studenti
-WHERE DataNascita > '2000-01-01';
+WHERE DataNascita > '2000';
 
 
 select * from Studenti
@@ -136,6 +136,7 @@ WHERE Crediti BETWEEN 10 AND 50
 ORDER BY Crediti ASC;
 
 /*
+ Like:
 	Serve per cercare testi.
 	| Pattern | Significato   |
 	| ------- | ------------- |
@@ -151,5 +152,25 @@ SELECT
 	Telefono
 FROM Studenti
 WHERE Nome LIKE 'M%' -- nomi che iniziano con M
-	or Nome LIKE '%a' -- oppure finiscono con a
+	OR Nome LIKE '%a' -- oppure finiscono con a
+
+SELECT 
+	Nome + ' ' + Cognome AS 'Nome completo'	
+FROM Docenti
+where Nome lIKE 'A%'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

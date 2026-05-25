@@ -64,7 +64,7 @@ SELECT
 	Cognome,
 	Email
 From Studenti 
-Where StudenteId = 30;
+Where StudenteId = 25;
 
 
 -- IS NULL / IS NOT NULL
@@ -76,6 +76,7 @@ FROM Studenti
 WHERE DataNascita is null 
 ORDER BY Nome DESC
 
+-- D/N 
 
 -- RESTITURE LA LISTA DEGLI STUDENTI CON DATA DI NASCITA 
 -- Ordina la colonna Nome in ordine ASCENDENTE = ASC 
@@ -85,9 +86,9 @@ FROM Studenti
 WHERE DataNascita IS NOT NULL 
 ORDER BY Nome ASC
 
--- CONCATENAZIONE / AS
+-- CONCATENAZIONE / AS 
 SELECT 
-   Nome + ' ' + Cognome AS 'Nome completo degli studenti',
+   Nome + ' ' + Cognome AS Nome_Comleto,
    CodiceFiscale
 FROM Studenti 
 

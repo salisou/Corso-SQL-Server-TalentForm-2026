@@ -51,7 +51,7 @@ FROM Studenti;
 INSERT INTO 
 		Studenti(Nome, Cognome, Email, CodiceFiscale, DataNascita, Telefono)
 VALUES ('Marco', 'Di Moro', 'marco.dimoro@gmail.com', 'DMRMRC87T12H501Z', '1987/05/12', '+393478945612'),
-('Stefania', 'Bianca', 'stefania.bianca@gmail.com', 'BNCSTF90A41F205X', '1990/01/25', '+393478945613'),
+('Stefania', 'Bianca', NULL, 'BNCSTF90A41F205X', '1990/01/25', '+393478945613'),
 ('Luca', 'Rossi', 'luca.rossi@gmail.com', 'RSSLCU95C15F839K', '1995/03/15', '+393478945614'),
 ('Anna', 'Verdi', 'anna.verdi@gmail.com', 'VRDNNA92D55H501T', '1992/04/15', '+393478945615'),
 ('Giulia', 'Ferrari', 'giulia.ferrari@gmail.com', 'FRRGLI98L22F205A', '1998/07/22', '+393478945616');
