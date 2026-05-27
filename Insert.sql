@@ -104,7 +104,8 @@ SELECT * FROM Corsi
 --INSERT ISCRIZIONI
 INSERT INTO Iscrizioni (StudenteID, CorsoID, DataIscrizione)
 VALUES
---(1,1,'2024-01-10'),(2,2,'2024-01-11'),(3,3,'2024-01-12'),
+(1,1,'2024-01-10'),
+--(2,2,'2024-01-11'),(3,3,'2024-01-12'),
 --(4,4,'2024-01-13'),
 (7,7,'2024-01-16'),
 (8,8,'2024-01-17'),
