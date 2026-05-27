@@ -275,16 +275,3 @@ INNER JOIN Iscrizioni AS i
 
 
 
-/*
-    =========================================
-    RIGHT JOIN
-    =========================================
-
-    RIGHT JOIN mostra:
-        - tutti i record della tabella destra
-        - anche senza corrispondenza
-          nella tabella sinistra
-*/
-
--- Esempio teorico:
--- Docenti, Corsi, Aule, Lezioni
