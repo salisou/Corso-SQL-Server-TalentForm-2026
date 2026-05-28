@@ -36,7 +36,7 @@ SELECT
 		WHEN Durata BETWEEN 50 AND 150 THEN 'Corso Standart'
 		Else 'Corso Completo'
 	END AS VerificaDurata
-FROM Corsi 
+FROM Corsi;
 
 /*
 	Le SubQuery:
@@ -78,7 +78,7 @@ FROM Iscrizioni
 GROUP BY StudenteId
 HAVING COUNT(*) > 1;
 
-select * from Iscrizioni
+select * from Iscrizioni;
 
 
 
@@ -90,17 +90,17 @@ WHERE s.StudenteId IN (1,7,10,30);
 
 
 SELECT DISTINCT
-StudenteId,
-	Nome, 
-	Cognome,
-FROM Studenti s
-WHERE s.StudenteId IN (
-	SELECT 
-		StudenteId
-	FROM Iscrizioni
-	GROUP BY StudenteId
-	HAVING COUNT(*) > 1
-);
+	StudenteId,
+		Nome, 
+		Cognome
+	FROM Studenti s
+	WHERE s.StudenteId IN (
+		SELECT 
+			StudenteId
+		FROM Iscrizioni
+		GROUP BY StudenteId
+		HAVING COUNT(*) > 1
+	);
 
 
 SELECT 
@@ -212,6 +212,10 @@ WHERE CorsoId = 7;
 
 DELETE FROM Iscrizioni
 WHERE CorsoId = 7;
+
+
+DELETE FROM Studenti
+WHERE (StudenteId = 7 and Nome = 'Luigia') AND Cognome = 'Valente';
 
 -- Exists (Controllare un record)
 /*
